@@ -1,0 +1,36 @@
+<div class="container text-center">
+   <div class="col">
+      <div class="row">
+         <h1 class="text text-warning mb-3">Order Details</h1>
+      </div>
+      <div class="row">
+         <table class="table table-bordered">
+            <tr>
+               <th>Name</th>
+               <td>{{ order.customer_name }}</td>
+            </tr>
+            <tr>
+               <th>Email</th>
+               <td>{{ order.email }}</td>
+            </tr>
+            <tr>
+               <th>Phone Number</th>
+               <td>{{ order.phonenumber }}</td>
+            </tr>
+            <tr>
+               <th>Product</th>
+               <td>{{ order.product_name }}</td>
+            </tr>
+            <tr>
+               <th>Quantity</th>
+               <td>{{ order.quantity }}</td>
+            </tr>
+            <tr>
+               <th colspan="2">
+                  <input name="action" onclick="history.back()" type="submit" value="CANCEL"/>
+               </th>
+            </tr>
+         </table>
+      </div>
+   </div>
+</div>

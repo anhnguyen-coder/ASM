@@ -1,0 +1,28 @@
+<div class="container text-center mt-3 mb-3 col-md8">
+    <form class =" card bg-light ml-3 mr-3" action="/order/add" method="post">
+    <h1 class="text text-primary mt-2 mb-2"> Add new order</h1>
+        <div class="form-group mt-2 mb-2">
+            <label class="fw-bold" for="">Customer </label>
+            <input class="form-control" type="text" name = "customer_name" required minlength="3" maxlength=" 100">
+        </div>
+        <div class="form-group mt-2 mb-2">
+            <label class="fw-bold" for="">Product</label>
+            <input class="form-control" type="text" name="product_name" required minlength="1" maxlength="1000">
+        </div>
+        <div class="form-group mt-2 mb-2">
+            <label  class="fw-bold"for="">Email</label>
+            <input  class="form-control" type="text" name = "email" required minlength="3" maxlength=" 100">
+        </div>
+        <div class="form-group mt-2 mb-2">
+            <label class="fw-bold" for="">Phone Number</label>
+            <input class="form-control" type="number" name="phonenumber" required minlength="1" maxlength="1000">
+        </div>
+        <div class="form-group mt-2 mb-2">
+            <label class="fw-bold" for="">Quantity</label>
+            <input class="form-control" type="number" name = "quantity" required minlength="3" maxlength=" 100">
+        </div>
+        <div class="form-group mt-2 mb-2">
+            <input class="btn btn-secondary" type="submit" value="Add">
+        </div>
+    </form>
+</div>

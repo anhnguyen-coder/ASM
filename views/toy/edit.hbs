@@ -1,0 +1,29 @@
+<div class="container text-center mt-3 mb-3 col-md8">
+    <form class =" card bg-light ml-3 mr-3" action="/toy/edit/{{toy._id}}" method="post">
+    <h1 class="text text-primary mt-2 mb-2"> Edit new toy</h1>
+        <div class="form-group mt-2 mb-2">
+            <label class="fw-bold" for="">Name</label>
+            <input class="form-control" type="text" name = "name" required value="{{toy.name}}" minlength="3" maxlength=" 100">
+        </div>
+        <div class="form-group mt-2 mb-2">
+            <label class="fw-bold" for="">Type</label>
+            <input class="form-control" type="type" name="type" required value="{{toy.type}}" minlength="1970" maxlength="2023">
+        </div>
+        <div class="form-group mt-2 mb-2">
+            <label  class="fw-bold"for="">Quantity</label>
+            <input  class="form-control" type="number" name = "quantity" required value="{{toy.quantity}}" minlength="3" maxlength=" 100">
+        </div>
+        <div class="form-group mt-2 mb-2">
+            <label class="fw-bold" for="">Price</label>
+            <input class="form-control" type="number" name = "price" required value="{{toy.price}}" minlength="3" maxlength=" 100">
+        </div>
+        <div class="form-group mt-2 mb-2">
+            <label class="fw-bold" for="">Image</label>
+            <img src="{{toy.image}}" width="200" height="250">
+            <input class="form-control" type="text" name = "image" value="{{toy.image}}" required>
+        </div>
+        <div class="form-group mt-2 mb-2">
+            <input class="btn btn-secondary" type="submit" value="Edit">
+        </div>
+    </form>
+</div>
