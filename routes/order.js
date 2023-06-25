@@ -16,7 +16,7 @@ router.get('/', async (req, res) => {
     var order = req.body;
     await OrderModel.create(order)
     .then(()=>{console.log("Add new order succeed!!!")});
-    res.redirect('/');
+    res.redirect('/order');
  
  })
 

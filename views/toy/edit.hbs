@@ -22,6 +22,11 @@
             <img src="{{toy.image}}" width="200" height="250">
             <input class="form-control" type="text" name = "image" value="{{toy.image}}" required>
         </div>
+      <div class="form-group mt-2 mb-2">
+         <label class="fw-bold" for="">Toy video</label><br>
+         <iframe src="https://www.youtube.com/embed/{{toy.video}}" width="250" height="200"></iframe>
+         <input class="form-control" type="text" name="trailer" value={{ toy.video }} required>
+      </div>
         <div class="form-group mt-2 mb-2">
             <input class="btn btn-secondary" type="submit" value="Edit">
         </div>

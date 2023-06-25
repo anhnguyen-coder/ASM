@@ -19,12 +19,9 @@ router.get('/delete/:id', async(req, res) => {
 })
 
 
-
-
 router.get('/add', async (req, res) => {  
    res.render('toy/add')
 })
-
 
 
 router.post('/add', async(req, res) =>{
