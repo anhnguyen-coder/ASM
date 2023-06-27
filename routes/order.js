@@ -21,7 +21,7 @@ router.get('/', async (req, res) => {
  })
 
 router.post('/search', async (req, res) => {
-    var keyword = req.body.title;
+    var keyword = req.body.customer_name;
     var orders = await OrderModel.find({ customer_name: new RegExp(keyword, "i")})
     res.render('order/', { orders: orders })
  })
@@ -41,6 +41,12 @@ router.post('/search', async (req, res) => {
     var id = req.body.id;
     var order = await OrderModel.findById(id);
     res.render('order/detail', { order : order })
+})
+
+router.get('/delete/:id', async(req, res) => {
+   await OrderModel.findByIdAndDelete(req.params.id)
+   .then(() => { console.log ('Delete order succeed !')});
+   res.redirect('/order');
 })
 
  module.exports = router;
